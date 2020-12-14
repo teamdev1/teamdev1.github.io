@@ -1,97 +1,39 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>TEAMDEV1 | Release Notes </title>
+		<title>TEAMDEV1 | Release Notes</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-
-		<!-- Wrapper-->
-			<div id="wrapper">
-
-				<!-- Nav -->
-					<nav id="nav">
-						<a href="#" class="icon solid fa-home"><span>Home</span></a>
-						<a href="#notes" class="icon solid fa-folder"><span>Release Notes</span></a>
-						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Me -->
-							<article id="home" class="panel intro">
-								<header>
-									<h4> TEAMDEV1 </h4>
-									<p>Release Notes</p>
-									<small> Best of the Best 9th | P.J Ahn, J.W Seok, J.W Jang, S.H Jung, D.H Jung</small>
-								</header>
-							</article>
-						<!-- Work -->
-							<article id="notes" class="panel">
-								<header>
-									<h2>Release Notes</h2>
-								</header>
-								<p>
-									현재 다운로드 가능한 최신 릴리즈 버전이 없습니다.
-								</p>
-								<section>
-									<div class="row">
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
-										</div>
-									</div>
-								</section>
-							</article>
-
-						<!-- Contact -->
-							<article id="contact" class="panel">
-								<header>
-									<h2>Contact Me</h2>
-								</header>
-								<form action="#" method="post">
-									<div>
-										<div class="row">
-											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<input type="submit" value="Send Message" />
-											</div>
-										</div>
-									</div>
-								</form>
-							</article>
-
-					</div>
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+				<!-- Header -->
+					<header id="header">
+						<h3>TEAMDEV1</h3>
+						<p>P.J Ahn &nbsp;&bull;&nbsp; J.W Seok &nbsp;&bull;&nbsp; J.W Jang &nbsp;&bull;&nbsp; D.H Jung &nbsp;&bull;&nbsp; S.H Jung </p>
+						<nav>
+							<ul>
+								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							</ul>
+						</nav>
+					</header>
 
 				<!-- Footer -->
-					<div id="footer">
-						<ul class="copyright">
-							<li>&copy; Copyright 2020 teamdev1.</li>
-						</ul>
-					</div>
+					<footer id="footer">
+						<span class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+					</footer>
 
 			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
 	</body>
 </html>
