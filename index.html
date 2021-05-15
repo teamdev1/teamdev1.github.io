@@ -1,39 +1,104 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>TEAMDEV1 | Release Notes</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=yes" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
-				<!-- Header -->
-					<header id="header">
-						<h3 style="color:black; font-weight: bold">TEAMDEV1</h3>
-						<p style="color:black; font-weight: bold">P.J Ahn &nbsp;&bull;&nbsp; J.W Seok &nbsp;&bull;&nbsp; J.W Jang &nbsp;&bull;&nbsp; D.H Jung &nbsp;&bull;&nbsp; S.H Jung </p>
-						<nav>
-							<ul>
-								<li><a href="https://github.com/teamdev1/beta-release/" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							</ul>
-						</nav>
-					</header>
+<!doctype html>
+<html lang="ko">
+  <head>
+  	<title>[BoB9] TEAMDEV1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright">&copy; TEAMDEV1. </span>
-					</footer>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+	<link rel="stylesheet" href="css/style.css">
 
+	<style>
+		.team-text { opacity: 0; }
+		.member-text { opacity: 0; }
+		.sd-1 { opacity: 0;  padding: 20px; }
+		.sd-2 { opacity: 0;  padding: 20px; }
+		.sd-3 { opacity: 0;  padding: 20px; }
+		.sd-4 { opacity: 0;  padding: 20px; }
+	</style>
+
+  </head>
+  <body>
+	<div class="home-slider owl-carousel js-fullheight">
+		<div class="slider-item js-fullheight" style="background-image:url(images/gilgil_photo.png);">
+      		<div class="overlay"></div>
+        	<div class="container">
+				<div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+					<div class="col-md-12 ftco-animate">
+						<div class="text w-100 text-center">
+	          				<h4 class="team-text">TEAMDEV1</h4>
+							<h5 class="mb-3 member-text">안평주, 석지원, 장재원, 정상훈, 정동현</h5>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+      </div>
+
+      <div class="slider-item js-fullheight" style="background-image:url(images/header.png);">
+      	<div class="overlay"></div>
+        <div style="overflow:scroll;" class="container">
+          <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+	          <div class="col-md-12 ftco-animate">
+	          	<div class="text w-100 text-center">
+					<img class="sd-1" src="images/seok.png" />
+					<img class="sd-2" src="images/jaewon.png" />
+					<img class="sd-3" src="images/sanghoon.png" />
+					<img class="sd-4" src="images/jhyeon.png" />
+	            </div>
+	          </div>
+	        </div>
+        </div>
+      </div>
+    </div>
+
+	<script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<script>
+		$ (document).ready(function(){
+			var timer = 600;
+			$('.team-text').animate({
+				opacity: '1'
+			}, timer,
+
+			function(){
+				$('.member-text').animate({
+				opacity: '1'
+			}, timer,
+
+			function(){
+				$('.sd-1').animate({
+					opacity: '1'
+			}, timer,
+				
+			function(){
+				$('.sd-2').animate({
+				opacity: '1'
+			}, timer,
+			
+			function(){
+				$('.sd-3').animate({
+					opacity: '1'
+			}, timer,
+			
+			function(){
+				$('.sd-4').animate({
+					opacity: '1'
+			}, timer,);
+		});
+	});
+	});
+	});
+	});
+});
+	</script>
+
+  </body>
 </html>
